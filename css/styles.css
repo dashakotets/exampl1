@@ -109,6 +109,10 @@ align-items: center;
     background-color: rgba(17, 17, 17, 0.6);
     padding: 380px 40px 40px 40px;
     border-radius: 30px;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title{
@@ -155,8 +159,23 @@ margin-bottom: 32px;
         letter-spacing: -0.03em;
         color: #fff;
         margin-left: auto;
-}
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        
 
+}
+.hero-btn-scroll::after{
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url(../images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
 
 /* ---------FEATURES----------- */
 
@@ -303,6 +322,20 @@ margin-bottom: 32px;
 }
 
 .made-list {}
+
+.made-item{
+    display: flex;
+}
+
+.made-item::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    margin-right: 8px;
+}
 
 .made-item:not(:last-child) {
     margin-bottom: 24px;
