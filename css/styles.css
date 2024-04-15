@@ -100,6 +100,11 @@ align-items: center;
     gap: 14px;
 }
 
+.header-soc-icon{
+    fill: transparent;
+    stroke: #111;
+}
+
 /* -----------------HERO------------ */
 .hero {
     padding-bottom: 80px;
