@@ -84,7 +84,7 @@
         </section>
         <section class="taste">
             <div class="container">
-                <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="accent">TASTE</span> SENSATION</h2>
+                <h2 class="taste-title title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="accent">TASTE</span> SENSATION</h2>
                 <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the
                 finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one
                 exceptional taste sensation.</p>
@@ -122,7 +122,7 @@
         </section>
         <section id="made" class="made">
             <div class="container">
-                <h2 class="made-title">hOW IT’S<span class="accent">made?</span></h2>
+                <h2 class="made-title title">hOW IT’S<span class="accent">made?</span></h2>
                 <img src="./images/section4-img.jpg" alt="liquid chocolate" width="600" height="400" class="made-image">
                 <h3 class="made-subtitle">Try our chocolates today and discover the perfect balance of flavor</h3>
                 <ul class="made-list">
@@ -146,7 +146,7 @@
             </div>
         </section>
         <section class="products">
-            <h2 class="products-title">Our<span class="accent"> pRODUCTS</span></h2>   
+            <h2 class="products-title title">Our<span class="accent"> pRODUCTS</span></h2>   
             <ul class="products-list">
                 <li class="products-item">
                     <img src="./images/ourproducts1.jpg"  width="230" height="201" alt="orange " class="products-image">
@@ -200,7 +200,7 @@
         </section>
         <section class="sellers">
             <div class="container">
-                <h2 class="sellers-title"><span class="accent">tOp </span>Sellers</h2>
+                <h2 class="sellers-title title"><span class="accent">tOp </span>Sellers</h2>
                 <ul class="sellers-list">
                     <li class="sellers-item">
                         <img src="./images/sellers -1.jpg" width="368" height="464" alt="CHOCOLATE WITH NUTS" c
@@ -225,7 +225,7 @@
             </div>
         </section>
         <section class="review">
-            <h2 class="review-title"><span class="accent">chocolate </span>is loved</h2>
+            <h2 class="review-title title"><span class="accent">chocolate </span>is loved</h2>
             <ul class="review-list">
                 <li class="review-item">
                     <img src="./images/review-img-1.jpg" width="80" height="80" alt="picture" class="review-image">
@@ -272,5 +272,36 @@
             <li class="footer-mebu-list"><a class="footer-menu-link" href="">Chocolate is loved</a></li>
         </ul>
     </footer>
+
+    <div class="backdrop">
+        <div class="modal">
+            <button type="button" class="modal-open-btn">X</button>
+            <p class="modal-title title">LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span></p>
+            <form class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-lable">Name</label>
+                    <div class="modal-input-wrap">
+                        <input type="text" class="modal-input" name="user-name" id="user-name">
+                        <svg class="modal-field-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-user"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-lable">Email</label>
+                    <input type="email" class="modal-input" name="user-email" id="user-email">
+                </div>
+                <div class="modal-field">
+                    <label for="user-tel" class="modal-lable">Phone number</label>
+                    <input type="tel" class="modal-input" name="user-tel" id="user-tel">
+                </div>
+                <div class="modal-field">
+                    <label for="user-comment" class="modal-lable"> Comment</label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Enter text" class="modal-text"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
