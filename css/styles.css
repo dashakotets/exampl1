@@ -612,6 +612,14 @@ margin-bottom: 32px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.is-open{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .modal{
@@ -708,4 +716,31 @@ margin-bottom: 32px;
 
 .modal-text:focus{
     border-color: #fd9222;
+}
+
+.check-text{
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.check-text span{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    fill: transparent;
+    margin-right: 12px;
+}
+
+.modal-check:checked + .check-text span{
+    background-color: #FD9222;
+    border: none;
+    fill: #fff;
 }
