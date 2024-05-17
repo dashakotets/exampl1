@@ -26,6 +26,8 @@ p, h1, h2, h3, h4, h5, h6{
 
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container{
@@ -48,8 +50,10 @@ img{
 
 .title{
 font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    /* font-size: 24px;
+    line-height: 1.17; */
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
@@ -240,8 +244,10 @@ margin-bottom: 32px;
 
 /* ---------TASTE--------  */
 .taste {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    /* padding-top: 120px;
+    padding-bottom: 60px; */
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .taste-title {
@@ -268,18 +274,21 @@ margin-bottom: 32px;
         text-align: center;
         color: #111;
         margin: 0 auto;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
+        margin-bottom: 32px;
         max-width: 486px;
 }
 
 .taste-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 32px;
+    /* gap: 24px 32px; */
+    gap: 20px;
 }
 
 .taste-item {    
-    width: calc((100% - 3 * 32px) / 4);
+    /* width: calc((100% - 3 * 32px) / 4); */
+    width: 100%;
     border-radius: 15px;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -318,8 +327,10 @@ margin-bottom: 32px;
 
 /* -------MADE ----------- */
 .made {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .made-title {
@@ -330,7 +341,8 @@ margin-bottom: 32px;
         text-transform: uppercase;
         text-align: center;
         color: #111;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
+        margin-bottom: 32px;
         
 }
 
@@ -345,7 +357,8 @@ margin-bottom: 32px;
         font-size: 18px;
         line-height: 1.33;
         color: #111;
-        margin-bottom: 28px;
+        /* margin-bottom: 28px; */
+        margin-bottom: 20px;
         max-width: 350px;
 }
 
@@ -355,6 +368,7 @@ margin-bottom: 32px;
     display: flex;
     position: relative;
     padding-left: 16px;
+    margin-bottom: 18px;
 }
 
 .made-item::before{
@@ -384,12 +398,14 @@ margin-bottom: 32px;
 .made-wrap{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 
 }
 
 .made-content{
-    padding: 32px;
+    /* padding: 32px; */
     background-color: #fff;
+    pad: 20px 14px;
 }
 
 /* ---------PRODUCTS----------  */
@@ -861,11 +877,22 @@ margin-bottom: 32px;
 
 /* ----------------adaptive------- ----*/
 
+/* -------tablet---------------- */
+
 @media screen and (min-width: 768px){
+    .title{
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
     .container{
         width: 768px;
         padding-left: 32px;
         padding-right: 32px;
+    }
+
+    .made > .container{
+        width: 678px;
     }
 
     .features{
@@ -880,13 +907,55 @@ margin-bottom: 32px;
     .features-item{
         width: calc((100% - 88px) / 2);
     }
+
+    .taste{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .taste-text{
+        margin-bottom: 50px;
+    }
+
+    .taste-list{
+        gap: 32px;
+    }
+
+    .taste-item{
+        width: calc((100% - 32px) / 2);
+    }
+
+    .made{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .made-content{
+        padding: 32px;
+    }
+
+   .made-subtitle{
+    margin-bottom: 28px;
+   }
+
+
+
+
 }
+
+
+/* ------PC-------------- */
+
 
 @media screen and (min-width: 1200px){
     .container {
         width: 1166px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .made > .container{
+        width: 1166px;
     }
     
     .features-list {
@@ -898,4 +967,33 @@ margin-bottom: 32px;
     .features-item {
         width: calc((100% - 2 * 88px) / 3);
     }
+
+    .taste{
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .taste-item{
+        width: calc((100% - 3 * 32px) / 4);
+    }
+
+    .taste-list{
+        gap: 24px 32px;
+    }
+
+    .made-wrap{
+        flex-wrap: nowrap;
+    }
+
+    .made{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .made-item{
+        margin-bottom: 24px;
+    }
+
+
+
 }
